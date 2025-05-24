@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0efdf;
+    color: #333;
+}
+
+header h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 27px;
+}
+
+header {
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    padding: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.container {
+    max-width: 400px;
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#balance {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.income-expenses-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.income-expenses-container div {
+    text-align: center;
+    flex: 1;
+}
+
+.money-income {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.money-expense {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+h5 {
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-right: 5px solid;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.list li.plus {
+    border-color: green;
+    color: green;
+}
+
+.list li.minus {
+    border-color: red;
+    color: red;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #fff;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    #balance {
+        font-size: 1.5rem;
+    }
+
+    .income-expenses-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .income-expenses-container div {
+        font-size: 1rem;
+    }
+
+    .money-income,
+    .money-expense {
+        font-size: 1rem;
+    }
+
+    .list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    select,
+    .form-control input {
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    #balance {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    select,
+    .form-control input {
+        font-size: 0.9rem;
+        padding: 7px;
+    }
+
+    .list li {
+        font-size: 0.95rem;
+    }
+
+    .income-expenses-container {
+        padding: 10px;
+    }
+}
