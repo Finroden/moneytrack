@@ -93,7 +93,6 @@ filterCategory.addEventListener("change", () => {
     updateValues();
 });
 
-// Initialize display
 renderTransactions();
 updateValues();
 
