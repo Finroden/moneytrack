@@ -4,7 +4,7 @@
 
 🖼️ Demo
 
-🔗 Live Preview
+🔗 <a href="https://adrians-money-track-app.netlify.app">Live Preview</a>
 
 🚀 Features
 
